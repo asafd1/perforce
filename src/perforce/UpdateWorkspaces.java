@@ -22,20 +22,7 @@ public class UpdateWorkspaces
 
 	private static void prepareHashMap()
 	{
-		serversMapping.put("dotnet-build", "ID1PREMBSD0173");
-		serversMapping.put("i4w-build", "ID1PRENBSD0174");
-		serversMapping.put("vm-collwin64-1", "ID1PRENBSD0178");
-		serversMapping.put("vm-comp-build", "ID1PRENBSD0179");
-		serversMapping.put("vm-comp-hudson", "ID1PRENBSD0180");
-		serversMapping.put("vm-db-bso-build", "ID1PRENBSD0181");
-		serversMapping.put("vm-db-db2-build", "ID1PRENBSD0182");
-		serversMapping.put("vm-db-oracle-build", "ID1PRENBSD0183");
-		serversMapping.put("vm-db-sds-build", "ID1PRENBSD0184");
-		serversMapping.put("vm-db-sybase-build", "ID1PRENBSD0186");
-		serversMapping.put("vm-infra-build3", "ID1PRENBSD0188");
-		serversMapping.put("vm-insight-build", "ID1PRENBSD0189");
-		serversMapping.put("buildwin1", "ID1PREKBSD0170");
-		serversMapping.put("vm-tpm-build", "ID1PRENBSD0191");
+		serversMapping.put("xxx", "xxx");
 	}
 
 	private static void doWork() throws Exception
@@ -44,7 +31,7 @@ public class UpdateWorkspaces
 		IServer server = null;
 		try
 		{
-			server = connect("172.20.102.146", 1666, "adavid");
+			server = connect("1.1.1.1", 1666, "user");
 			// updateClientHost(server, "TW", "asaf-test2");
 			updateClients(server);
 		}
